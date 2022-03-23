@@ -1,0 +1,17 @@
+#Puerto en el que va a correr
+server:
+  port:8081
+#Mapear archivos de configuraci�n
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          url: https://github.com/JulianSanti28/microservices.git
+          searchPath: config-data
+          username: ${GIT_USER}
+          password: ${GIT_PASSWORD}
+  secutiry:
+    user:
+      name: root
+      password: s3cr3t
