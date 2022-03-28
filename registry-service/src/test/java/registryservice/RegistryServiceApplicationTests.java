@@ -1,10 +1,10 @@
-package co.unicauca.registry.service.counicaucaregistryservice;
+package registryservice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class CoUnicaucaRegistryServiceApplicationTests {
+class RegistryServiceApplicationTests {
 
 	@Test
 	void contextLoads() {
