@@ -35,3 +35,10 @@ spring:
 logging:
   pattern:
     console: "%d{yyyy-MM-dd HH:mm:ss} ${LOG_LEVEL_PATTERN:-%5p} %m%n"
+#Parámetros de configuración para que se conecte al Eureka server
+#Recuerde que la instancia de eureka va a estar corriendo en el puerto 8099 que a su vez se conecta al 8081 del
+#cloud-config
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8099/eureka/
